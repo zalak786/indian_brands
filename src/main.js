@@ -1,16 +1,14 @@
 import './style.css'
+import initialData from '../data/brands.json'
 
 const contentArea = document.getElementById('content-area');
 const searchInput = document.getElementById('searchInput');
 
-let allData = [];
+let allData = initialData;
 
-// Fetch Data
-async function init() {
+// Initialize
+function init() {
   try {
-    const response = await fetch('/data/brands.json');
-    if (!response.ok) throw new Error('Failed to load data');
-    allData = await response.json();
     render(allData);
   } catch (error) {
     console.error(error);
@@ -37,16 +35,16 @@ function render(data) {
     const titleIdx = document.createElement('h2');
     titleIdx.className = 'category-title';
     titleIdx.textContent = categoryObj.category;
-    
+
     // Check if we need specific colors for categories (optional override or just default)
-    
+
     const grid = document.createElement('div');
     grid.className = 'brands-grid';
 
     categoryObj.brands.forEach(brand => {
       const card = document.createElement('div');
       card.className = 'brand-card';
-      
+
       card.innerHTML = `
         <div>
           <h3 class="brand-name">${brand.name}</h3>
@@ -68,18 +66,18 @@ function render(data) {
 // Search Logic
 searchInput.addEventListener('input', (e) => {
   const term = e.target.value.toLowerCase();
-  
+
   const filteredData = allData.map(cat => {
     const filteredBrands = cat.brands.filter(brand => {
-      return brand.name.toLowerCase().includes(term) || 
-             (brand.description && brand.description.toLowerCase().includes(term));
+      return brand.name.toLowerCase().includes(term) ||
+        (brand.description && brand.description.toLowerCase().includes(term));
     });
 
     // Also include if category name matches? Optional. 
     // Let's keep it simple: filter brands, if category matches show all? 
     // Usually user searches for brand or category.
     // If category matches, show all brands in that category.
-    
+
     if (cat.category.toLowerCase().includes(term)) {
       return cat; // Return full category if name matches
     }
