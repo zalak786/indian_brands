@@ -25,7 +25,7 @@ function render(data) {
     return;
   }
 
-  data.forEach(categoryObj => {
+  data.forEach((categoryObj, index) => {
     // Skip empty categories after filtering
     if (categoryObj.brands.length === 0) return;
 
@@ -34,9 +34,7 @@ function render(data) {
 
     const titleIdx = document.createElement('h2');
     titleIdx.className = 'category-title';
-    titleIdx.textContent = categoryObj.category;
-
-    // Check if we need specific colors for categories (optional override or just default)
+    titleIdx.textContent = categoryObj.name;
 
     const grid = document.createElement('div');
     grid.className = 'brands-grid';
@@ -60,6 +58,26 @@ function render(data) {
     section.appendChild(titleIdx);
     section.appendChild(grid);
     contentArea.appendChild(section);
+
+    // Insert Ad Banner (In-Feed) every 2 categories
+    if ((index + 1) % 2 === 0 && index !== data.length - 1) {
+      const adContainer = document.createElement('div');
+      adContainer.className = 'ad-container in-feed';
+      adContainer.innerHTML = `
+        <span class="ad-label">Advertisement</span>
+        <!-- In-Feed Ad Slot -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-fb+5w+4e-db+86"
+             data-ad-client="ca-pub-7578183786785959"
+             data-ad-slot="1234567890"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      `;
+      contentArea.appendChild(adContainer);
+    }
   });
 }
 
@@ -78,7 +96,7 @@ searchInput.addEventListener('input', (e) => {
     // Usually user searches for brand or category.
     // If category matches, show all brands in that category.
 
-    if (cat.category.toLowerCase().includes(term)) {
+    if (cat.name.toLowerCase().includes(term)) {
       return cat; // Return full category if name matches
     }
 

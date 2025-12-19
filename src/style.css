@@ -3,8 +3,10 @@
   --card-bg: rgba(30, 30, 35, 0.6);
   --text-main: #ffffff;
   --text-secondary: #a0a0b0;
-  --accent-color: #ff9933; /* Saffron-ish */
-  --accent-secondary: #138808; /* Green-ish */
+  --accent-color: #ff9933;
+  /* Saffron-ish */
+  --accent-secondary: #138808;
+  /* Green-ish */
   --gradient-start: #ff9933;
   --gradient-end: #ff5e62;
   --font-family: 'Outfit', sans-serif;
@@ -216,12 +218,52 @@ footer {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  h1 { font-size: 2.5rem; }
-  .brands-grid { grid-template-columns: 1fr; }
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .brands-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Ads --- */
+.ad-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 3rem auto;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.ad-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
 }
