@@ -1,0 +1,167 @@
+[
+  {
+    "category": "Electronics",
+    "brands": [
+      {
+        "name": "boAt",
+        "website": "https://www.boat-lifestyle.com/",
+        "description": "India's leading earwear audio brand."
+      },
+      {
+        "name": "Micromax",
+        "website": "https://micromaxinfo.com/",
+        "description": "Consumer electronics company known for mobile phones."
+      },
+      {
+        "name": "Lava",
+        "website": "https://www.lavamobiles.com/",
+        "description": "Indian mobile handset and tablet manufacturer."
+      },
+      {
+        "name": "Noise",
+        "website": "https://www.gonoise.com/",
+        "description": "Smart wearables and wireless earphones."
+      },
+      {
+        "name": "Fire-Boltt",
+        "website": "https://www.fireboltt.com/",
+        "description": "Homegrown brand for smartwatches and audio."
+      },
+       {
+        "name": "Mivi",
+        "website": "https://www.mivi.in/",
+        "description": "High-quality electronic gadgets and audio devices."
+      },
+       {
+         "name": "Portronics",
+         "website": "https://www.portronics.com/",
+         "description": "Innovative portable electronics and charging solutions."
+       }
+    ]
+  },
+  {
+    "category": "Fashion",
+    "brands": [
+      {
+        "name": "Fabindia",
+        "website": "https://www.fabindia.com/",
+        "description": "Retailer of garments, furnishings, fabrics, and ethnic products."
+      },
+      {
+        "name": "Biba",
+        "website": "https://www.biba.in/",
+        "description": "Indian fashion brand for women and girls."
+      },
+      {
+        "name": "Raymond",
+        "website": "https://www.raymond.in/",
+        "description": "Premium formal wear and fabric manufacturer."
+      },
+      {
+        "name": "Peter England",
+        "website": "https://www.peterengland.com/",
+        "description": "Leading menswear brand in India."
+      },
+      {
+        "name": "Allen Solly",
+        "website": "https://www.allensolly.com/",
+        "description": "Work casuals and Friday dressing for men and women."
+      },
+      {
+        "name": "Manyavar",
+        "website": "https://www.manyavar.com/",
+        "description": "Ethnic wear for men, especially for weddings."
+      },
+      {
+        "name": "Nykaa",
+        "website": "https://www.nykaa.com/",
+        "description": "Premier online beauty and wellness destination."
+      },
+      {
+        "name": "Hidesign",
+        "website": "https://hidesign.com/",
+        "description": "Leather goods manufacturer known for its craftsmanship."
+      }
+    ]
+  },
+  {
+    "category": "FMCG",
+    "brands": [
+      {
+        "name": "Amul",
+        "website": "https://amul.com/",
+        "description": "The Taste of India - Dairy cooperative."
+      },
+      {
+        "name": "Britannia",
+        "website": "http://britannia.co.in/",
+        "description": "One of India's leading biscuit manufacturers."
+      },
+      {
+        "name": "Parle",
+        "website": "http://www.parleproducts.com/",
+        "description": "Largest manufacturer of biscuits and confectionery in India."
+      },
+      {
+        "name": "ITC",
+        "website": "https://www.itcportal.com/",
+        "description": "Conglomerate with presence in FMCG, Hotels, Packaging, etc."
+      },
+      {
+        "name": "Dabur",
+        "website": "https://www.dabur.com/",
+        "description": "Ayurvedic medicine and natural consumer products."
+      },
+      {
+        "name": "Godrej",
+        "website": "https://www.godrejcp.com/",
+        "description": "Consumer goods across personal, hair, and home care."
+      },
+      {
+        "name": "Haldiram's",
+        "website": "https://www.haldirams.com/",
+        "description": "Major sweets and snacks manufacturer."
+      },
+      {
+        "name": "Paper Boat",
+        "website": "https://www.tataconsumer.com/brands/beverages/paper-boat",
+        "description": "Traditional Indian beverages and foods."
+      }
+    ]
+  },
+  {
+    "category": "Automotive",
+    "brands": [
+      {
+        "name": "Tata Motors",
+        "website": "https://www.tatamotors.com/",
+        "description": "Leading global automobile manufacturer of cars and commercial vehicles."
+      },
+      {
+        "name": "Mahindra",
+        "website": "https://www.mahindra.com/",
+        "description": "Utility vehicles, information technology, financial services, and vacation ownership."
+      },
+      {
+        "name": "Maruti Suzuki",
+        "website": "https://www.marutisuzuki.com/",
+        "description": "Subsidiary of Suzuki Motor Corporation, leading car maker in India."
+      },
+      {
+        "name": "Bajaj Auto",
+        "website": "https://www.bajajauto.com/",
+        "description": "Manufacturer of motorcycles and three-wheelers."
+      },
+      {
+        "name": "Royal Enfield",
+        "website": "https://www.royalenfield.com/in/en/home/",
+        "description": "The oldest global motorcycle brand in continuous production."
+      },
+      {
+        "name": "TVS Motor",
+        "website": "https://www.tvsmotor.com/",
+        "description": "Two-wheeler and three-wheeler manufacturer."
+      }
+    ]
+  }
+]
